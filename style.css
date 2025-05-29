@@ -132,7 +132,7 @@ main .todo-list-fullpage .todo-container .addTask form {
   padding: 2.5rem;
   gap: 2rem;
 }
-main .todo-list-fullpage .todo-container .addTask form input {
+main .todo-list-fullpage .todo-container .addTask form #input-text {
   width: 100%;
   font-size: 2rem;
   background-color: var(--sec);
@@ -150,6 +150,21 @@ main .todo-list-fullpage .todo-container .addTask form textarea {
   color: var(--pri);
   outline: none;
 }
+main .todo-list-fullpage .todo-container .addTask form .mark {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0.5rem;
+}
+main .todo-list-fullpage .todo-container .addTask form .mark input {
+  scale: 2;
+  outline: none;
+}
+main .todo-list-fullpage .todo-container .addTask form .mark label {
+  font-size: 1.5rem;
+}
 main .todo-list-fullpage .todo-container .addTask form button {
   width: 100%;
   font-size: 2rem;
@@ -157,6 +172,7 @@ main .todo-list-fullpage .todo-container .addTask form button {
   color: var(--sec);
   padding: 0.5rem;
   font-weight: 700;
+  transition: all linear 0.1s;
 }
 main .todo-list-fullpage .todo-container .addTask form button:active {
   scale: 0.95;
@@ -184,6 +200,22 @@ main .todo-list-fullpage .todo-container .allTask .task {
 }
 main .todo-list-fullpage .todo-container .allTask .task h5 {
   font-size: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.2rem;
+}
+main .todo-list-fullpage .todo-container .allTask .task h5 span {
+  background-color: var(--red);
+  border-radius: 2rem;
+  padding: 4px 6px;
+  font-size: 0.7rem;
+}
+main .todo-list-fullpage .todo-container .allTask .task h5 span.true {
+  opacity: 1;
+}
+main .todo-list-fullpage .todo-container .allTask .task h5 span.false {
+  opacity: 0;
 }
 main .todo-list-fullpage .todo-container .allTask .task button {
   font-size: 1.2rem;
